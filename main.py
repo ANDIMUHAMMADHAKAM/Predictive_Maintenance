@@ -145,7 +145,8 @@ def absorber():
                                entered_cmr=CMR,
                                entered_age=Age,
                                selected_jenis=Jenis_input,
-                               entered_delivery_date=delivery_date)
+                               entered_delivery_date=delivery_date,
+                               title="Prediksi Penggantian Absorber")
 
     return render_template("absorber.html", areas=Area, vehicles=Vehicle_absorber, jenis_absorber=Jenis_absorber, title="Prediksi Penggantian Absorber")
 
@@ -177,7 +178,8 @@ def wiper():
                                entered_cmr=CMR,
                                entered_age=Age,
                                selected_jenis=Jenis_input,
-                               entered_delivery_date=delivery_date)
+                               entered_delivery_date=delivery_date,
+                               title="Prediksi Penggantian Wiper")
 
     return render_template("wiper.html", areas=Area, vehicles=Vehicle_wiper, jenis_wiper=Jenis_wiper, title="Prediksi Penggantian Wiper")
 
@@ -209,10 +211,10 @@ def battery():
                                entered_cmr=CMR,
                                entered_age=Age,
                                selected_jenis=Jenis_input,
-                               entered_delivery_date=delivery_date)
+                               entered_delivery_date=delivery_date,
+                               title="Prediksi Penggantian Aki")
 
     return render_template("battery.html", areas=Area, vehicles=Vehicle_battery, jenis_battery=Jenis_battery, title="Prediksi Penggantian Aki")
-
 
 
 @app.route("/brake", methods=["GET", "POST"])
@@ -242,7 +244,8 @@ def brake():
                                entered_cmr=CMR,
                                entered_age=Age,
                                selected_jenis=Jenis_input,
-                               entered_delivery_date=delivery_date)
+                               entered_delivery_date=delivery_date,
+                               title="Prediksi Penggantian Kampas Rem")
 
     return render_template("brake.html", areas=Area, vehicles=Vehicle_brake, jenis_brake=Jenis_brake,
                            title="Prediksi Penggantian Kampas Rem")
@@ -275,7 +278,8 @@ def clutch():
                                entered_cmr=CMR,
                                entered_age=Age,
                                selected_jenis=Jenis_input,
-                               entered_delivery_date=delivery_date)
+                               entered_delivery_date=delivery_date,
+                               title="Prediksi Penggantian Kopling")
 
     return render_template("clutch.html", areas=Area, vehicles=Vehicle_clutch, jenis_clutch=Jenis_clutch,
                            title="Prediksi Penggantian Kopling")
