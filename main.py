@@ -279,10 +279,10 @@ def clutch():
                                entered_age=Age,
                                selected_jenis=Jenis_input,
                                entered_delivery_date=delivery_date,
-                               title="Prediksi Penggantian Kopling")
+                               title="Prediksi Penggantian Kampas Kopling")
 
     return render_template("clutch.html", areas=Area, vehicles=Vehicle_clutch, jenis_clutch=Jenis_clutch,
-                           title="Prediksi Penggantian Kopling")
+                           title="Prediksi Penggantian Kampas Kopling")
 
 if __name__ == "__main__":
     app.run(debug=True)
